@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Welcome to shell"
+echo "当前时间:`date`"
+echo "当前系统登录用户：`who | awk '{print$1}'`"
+echo "当前磁盘使用情况：`df -hT | grep "/$" | awk '{print$6}'`"
+echo "当前系统使用进程数：`ps | wc -l`"
+echo "当前内存空闲容量 `free | grep "Mem:" | awk '{print$4}'`"KB
+echo "当前CPU使用率：`uptime | awk -F, '{print$3}' | awk '{print$3}'`"
+echo "The power by h4LnX"
